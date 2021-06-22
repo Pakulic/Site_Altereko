@@ -1,0 +1,204 @@
+/* _______________________________________CONFIG RESPONSIVE____________________________________*/
+
+@media (max-width:768px) {
+  .entete {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 30vh;
+  }
+  .navigation a {
+    padding: 1.5em 1em;
+  }
+  .boutonboutique {
+    margin: auto; 
+    margin-bottom: 1em;
+  } 
+  .boutonContactboutique {
+    padding: 0.5em 0.8em;
+  }
+  .menuBas ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  }
+  #boutique{
+    top: 15em;
+    margin-bottom: 15em;
+  }
+} 
+
+@media (min-width:768px) and (max-width:940px) {
+  .entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 25vh;
+    margin-left: 1em;
+  }
+  .navigation a {
+    padding: 1.5em 1em;
+  }
+  .boutonboutique {
+    margin-left: auto; 
+    margin-right: 1em;
+
+  } 
+  .boutonContactboutique {
+    padding: 0.5em 0.8em;
+  }
+
+  #boutique{
+    top: 6em;
+    margin-bottom: 6em;
+  }
+} 
+
+@media (min-width:940px) and (max-width:1200px) {
+  .entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 30vh;
+    margin-left: 1em;
+  }
+  .navigation a {
+    padding: 1.5em 2em;
+  }
+  .boutonboutique {
+    margin-left: auto; 
+    margin-right: 1em;
+
+  } 
+  .boutonContactboutique {
+    padding: 0.5em 1em;
+  }
+
+  #boutique{
+    top: 6em;
+    margin-bottom: 6em;
+  }
+} 
+
+@media (min-width:1200px) {
+
+  .entete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5em;
+  }
+  .logo {
+    width: 30vh;
+    margin-left: 3em;
+  }
+  
+  .navigation a {
+    color: #534741;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5em 3em;
+  }
+  .boutonboutique {
+    margin-left: auto; 
+    margin-right: 4em;
+  }
+  #boutique{
+    top: 6em;
+    margin-bottom: 6em;
+  }
+}
+
+/* _______________________________________CONFIG HEADER / BARRE DE NAVIGATION____________________________________*/
+
+.entete {
+  background-color: #FFFBF6;
+  gap:2em; 
+}
+.navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navigation li {
+  list-style: none;
+}
+.navigation a {
+  color: #534741;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navigation a:hover {
+  background-color: #39FFC9;
+  cursor: pointer;
+}
+
+.boutonContactboutique {
+  color: #534741;
+  background-color: #FFFBF6;
+  border: 2px solid #534741;
+}
+
+.boutonContactboutique:hover {
+  cursor: pointer;
+  color: #FFFBF6;
+  background-color: #534741;
+}
+
+/* _______________________________________CONFIG CORPS DE PAGE____________________________________*/
+body{
+  background-color: #FFFBF6;
+}
+
+#boutique{
+  color:#534741 ;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  text-align: center;
+}
+.article{
+  margin-bottom: 1.5em;
+}
+.nomArticle,.quantite,.prix{
+  margin-top: 0em;
+  margin-bottom: 0.1em;
+}
+.nomArticle,.prix{
+  font-size: 1.4em;
+  font-weight : 700; ;
+}
+.quantite{
+  font-size: 1em;
+  color:#D6CAB3
+}
+.photoArticle{
+  width: 20em;
+  height: 10em ;
+  object-fit: cover;
+  border-top-left-radius:2em;
+  border-top-right-radius: 2em;
+}
+.ajoutPanier{
+  color: #534741;
+  background-color: #D6CAB3;
+}
+.ajoutPanier:hover {
+  color: #D6CAB3;
+  background-color: #534741;
+  cursor: pointer;
+}

@@ -1,0 +1,596 @@
+
+/* __________________________CONFIGURATION RESPONSIVE_______________________ */
+@media screen and (max-width:900px) {
+  /* configuration entête de page */
+  .entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    /* taille logo */
+
+  .logo {
+    width: 30vh;
+  }
+  /* taille zone de lien du menue */
+  .navigation li {
+    padding: 0.5em 0;
+  }
+  /* position du bouton contact */
+  .bouton {
+    margin: auto;
+    margin: 1em;
+  }
+  /* position de la section d'accueil */
+
+  #accueil {
+    position: relative;
+    top:2em;
+  }
+  
+  /* position des contenus article et image dans la section d'accueil */
+
+  .containerAccueil{
+    display: flex;
+    flex-wrap:wrap ; 
+    justify-content: center;
+    align-items: center;
+  }
+    /* position des contenus article de la section d'accueil */
+
+  .articleAccueil {
+    position: relative;
+    margin-top: 20em;
+    width: 25em;
+    padding-left: 1em;
+    height: 100%;
+    border-left: 2px solid#534741;
+  }
+ /* position des contenus image de la section d'accueil */
+
+  #accueil .images{
+    display: none;
+  }
+  /* #accueil .images {
+    position: relative;
+    margin-bottom: auto; 
+  }*/
+/* position de la section engagements */
+
+  .containerEngagements {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    width: 100%;
+    height: 40em;
+  }
+
+/* position des contenus images dans la section engagements */
+
+  #engagements .images {
+    display: none;
+  }
+/* position des contenus articles dans la section engagements */
+
+  .articleEngagement {
+    width: 90%;
+    margin: 0;
+  }
+/* position des contenus  dans le footer */
+  .menuBas ul{
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    padding: 0;
+    gap: 1em;
+  }
+}
+@media (min-width:900px) and (max-width:1024px) {
+  .entete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    width: 25vh;
+    margin-left: 1em;
+  }
+  .navigation ul {
+    display: flex;
+  }
+  .navigation a {
+    font-size: 1em;
+    margin: 1em;
+  }
+  .bouton {
+    margin-left: auto;
+    margin-right: 1em;
+  }
+  .boutonContact{
+    padding: 0.5em 0.8em;
+  }
+/* CONFIGURATION section accueiL*/
+
+  #accueil{
+    height: 48em;
+    padding-bottom: 0.5em;
+  }
+/* CONFIGURATION article+image accueiL*/
+
+.containerAccueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/* CONFIGURATION ARTICLE accueiL*/
+
+.articleAccueil {
+  position: relative;
+  margin-bottom: auto;
+  margin-top:5em ; 
+  margin-right: 5em; 
+  width: 25em;
+  padding-left: 1em;
+  height: 100%;
+  border-left: 2px solid#534741;
+
+}
+  /* CONFIGURATION IMAGE accueiL*/
+
+  #accueil .images {
+    position: relative;
+    margin-top: -9em;
+  }
+  /* CONFIGURATION section engagements*/
+
+  #engagements {
+    background-color: #39FFC9;
+  }
+  .containerEngagements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    gap:5em ;
+  }
+  .articleEngagement {
+    width:80%;
+  }
+}
+@media (min-width:1024px) {
+      /* CONFIGURATION entête*/
+
+  .entete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo {
+    width: 30vh;
+    margin-left: 3em;
+  }
+  .navigation{
+    margin-left: 1.5em;
+  }
+  .navigation ul {
+    display: flex;
+  }
+  .navigation a {
+    margin: 1em;
+  }
+  .bouton {
+    margin-left: auto;
+    margin-right: 3em;
+  }
+    /* CONFIGURATION section accueil*/
+  .containerAccueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 75%;
+    margin: auto;
+  }
+
+/* CONFIGURATION iMAGE ACCUEIL*/
+
+  #accueil .images {
+    position: relative;
+    margin-top: auto;
+    margin-bottom:10em ; 
+  }
+/* CONFIGURATION ARTICLE accueiL*/
+
+.articleAccueil {
+  position: relative;
+  margin-bottom: auto;
+  margin-top:10em ; 
+  margin-right: 5em; 
+  width: 25em;
+  border-left: 2px solid#534741;
+  padding-left: 1em;
+  height: 100%;
+}
+  /* CONFIGURATION section engagements*/
+  #engagements {
+    background-color: #39FFC9;
+  }
+  
+  .containerEngagements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 48em;
+    width: 70%;
+  }
+  .articleEngagement {
+    width:25em;
+  }
+}
+
+/* _______________________________________CONFIG HEADER / BARRE DE NAVIGATION____________________________________*/
+
+.entete {
+  background-color:#FEFBF3;
+}
+
+
+.navigation ul {
+  margin:0 ;
+  padding:0 ;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation a {
+  color: #534741;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #39FFC9;
+  cursor: pointer;
+}
+
+
+.boutonContact {
+  color: #FEFBF3;
+  text-decoration: none;
+  background-color: #534741;
+}
+.boutonContact:hover {
+  cursor: pointer;
+}
+
+/* _____________________________________________SECTION ACCUEIL____________________________________*/
+
+/* CONFIGURATION BACKGROUND ET DISPOSITION (flex) SECTION ACCUEIL */
+
+#accueil {
+  background-color: #D6CAB3;
+  width: 100%;
+  height: 48em;
+  color: #534741;
+}
+
+
+#accueil h1 {
+  color:#FEFBF3;
+  margin: 0;
+}
+
+#accueil h2 {
+  margin: 0em 0em 0.5em 0em;
+}
+
+
+/* CONFIGURATION BOUTON "COMMANDEZ"*/
+
+.commandez {
+  color: #39FFC9;
+  background-color: #534741;
+}
+
+.commandez:hover {
+  cursor: pointer;
+}
+
+/* CONFIGURATION IMAGE ET CERCLES*/
+
+
+#accueil .img {
+  margin-top: 10em;
+  background-image: url(../images/pexels-maria-orlova-4947386.jpg);
+  background-size: 25em;
+  background-position: left;
+  width: 20em;
+  height: 20em;
+  border-radius: 9999px;
+  object-fit: cover;
+  position: relative;
+  z-index: 6;
+}
+
+#accueil .rondBrun {
+  margin-top: -20em;
+  margin-left: -1em;
+  background-color: #534741;
+  width: 11em;
+  height: 11em;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 0;
+}
+
+#accueil .rondCyan {
+  margin-top: -2em;
+  margin-left: 9em;
+  background-color: #39FFC9;
+  width: 11em;
+  height: 11em;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 1;
+}
+
+#accueil .cercleCyan {
+  margin-top: -21em;
+  width: 7em;
+  height: 7em;
+  border: 2px solid #39FFC9;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 3;
+}
+
+#accueil .cercleBrun {
+  margin-top: -8em;
+  margin-left: 13em;
+  width: 7em;
+  height: 7em;
+  border: 2px solid #534741;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 2;
+}
+
+#accueil .cercleBlanc1 {
+  margin-top: -5em;
+  margin-left: -3em;
+  width: 11em;
+  height: 11em;
+  border: 2px solid #FEFBF3;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 5;
+}
+
+#accueil .cercleBlanc2 {
+  margin-top: -5em;
+  margin-left: 11em;
+  width: 11em;
+  height: 11em;
+  border: 2px solid #FEFBF3;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 4;
+}
+
+/* _____________________________________________SECTION ARTISANS____________________________________*/
+
+#artisans {
+  background-color: #534741;
+  width: 100%;
+  padding-top: 5em;
+  height: 43em;
+  border-image: linear-gradient(to right, #534741, #FEFBF3);
+}
+
+#artisans h1 {
+  color: #D6CAB3;
+  margin: 1.5em 0 0 2em;
+}
+
+#artisans h2 {
+  color: #FEFBF3;
+  margin: 0 0 0.5em 1.7em;
+}
+
+#artisans h3 {
+  margin: 0;
+}
+
+#artisans p {
+  margin: 0;
+}
+
+.cartes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  align-items: center; 
+  overflow-x: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.articleArtisans {
+  margin: 0.5em;
+  position: relative;
+}
+
+.photo {
+  display: block;
+  margin: auto;
+  height: 10em;
+  width: 10em;
+  object-fit: cover;
+  border: 1em solid #2A2522;
+  border-radius: 9999px;
+}
+
+.texte {
+  margin-top: -4em;
+  padding-top: 4em;
+  background-color: #2A2522;
+  border-radius: 2em;
+  width: 16em;
+}
+
+.nom {
+  margin-top: 4em;
+}
+
+.nom, .origine, .metier {
+  text-align: center;
+  color: #D6CAB3;
+}
+
+.nom, .origine {
+  color: #D6CAB3;
+}
+
+.metier {
+  color: #39FFC9;
+  font-weight: 700;
+}
+
+.origine {
+  font-style: italic;
+}
+
+.description {
+  font-size: 1em;
+  color: #D6CAB3;
+  padding: 1em;
+}
+
+/* _____________________________________________SECTION ENGAGEMENTS____________________________________*/
+
+
+.containerEngagements {
+  background-color: #FEFBF3;
+  margin: auto;
+  width: 70%;
+}
+
+/* CONFIGURATION ARTICLE*/
+
+.articleEngagement {
+  position: relative;
+  margin-top: auto;
+  margin-left: 0.5em;
+  border-left: 2px solid #D6CAB3;
+  padding-left: 0.5em;
+  padding-bottom: 2em;
+}
+
+#engagements h1 {
+  color: #D6CAB3;
+  margin: 0;
+}
+
+#engagements h2 {
+  margin: 0em 0em 0.5em 0em;
+  color: #534741;
+}
+
+#engagements p {
+  color: #534741;
+}
+
+/* CONFIGURATION BOUTON "NOS ENGAGEMENTS"*/
+
+.boutonEngagement {
+  background-color: #39FFC9;
+  color: #534741;
+}
+
+.boutonEngagement:hover {
+cursor: pointer;
+}
+
+#engagements .img {
+  margin-top: 8em;
+  background-image: url(../images/pexels-sidnei-maia-3489129.jpg);
+  background-size: 40vh;
+  background-position: center;
+  width: 20em;
+  height: 20em;
+  border-radius: 9999px;
+  object-fit: cover;
+  position: relative;
+  z-index: 6;
+}
+
+#engagements .rondBrun {
+  margin-top: -20em;
+  margin-left: 9em;
+  background-color: #534741;
+  width: 11em;
+  height: 11em;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 0;
+}
+
+#engagements .rondCyan {
+  margin-top: -2em;
+  margin-left: -1em;
+  background-color: #39FFC9;
+  width: 11em;
+  height: 11em;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 1;
+}
+
+#engagements .cercleCyan {
+  margin-top: -21em;
+  margin-left: 10em;
+  width: 7em;
+  height: 7em;
+  border: 2px solid #39FFC9;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 3;
+}
+
+#engagements .cercleBrun {
+  margin-top: -8em;
+  margin-left: -2em;
+  width: 7em;
+  height: 7em;
+  border: 2px solid #534741;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 2;
+}
+
+#engagements .cercleGris1 {
+  margin-top: -5em;
+  margin-left: 11em;
+  width: 11em;
+  height: 11em;
+  border: 2px solid #D6CAB3;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 5;
+}
+
+#engagements .cercleGris2 {
+  margin-top: -5em;
+  margin-left: -3em;
+  width: 11em;
+  height: 11em;
+  border: 2px solid #D6CAB3;
+  border-radius: 9999px;
+  position: relative;
+  z-index: 4;
+}

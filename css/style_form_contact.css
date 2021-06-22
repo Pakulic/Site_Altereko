@@ -1,0 +1,115 @@
+
+/* _______________________________________CONFIG FENETRE "CONTACT"____________________________________*/
+
+@media(max-width:900px){
+  #formContact {
+    width: 50%;
+    background-color: #534741;
+    border-radius: 2em;
+    padding: 2em;
+    margin: auto;
+    position: fixed;
+    top: 9em;
+    left: 8em;
+    z-index: 8;
+  }
+}
+@media(min-width:900px){
+  #formContact {
+    width: 50%;
+    background-color: #534741;
+    border-radius: 2em;
+    padding: 2em;
+    margin: auto;
+    position: fixed;
+    top: 9em;
+    left: 22em;
+    z-index: 8;
+  }
+}
+
+/* _________________________________CONFIG BOUTON FERMETURE FENETRE "CONTACT"____________________________________*/
+
+#fermeture {
+  color: #FEFBF3;
+  font-size: 1.2em;
+  display: inline;
+  float: right;
+}
+
+/* _________________________________CONFIG DU FORMULAIRE ____________________________________*/
+
+.champText {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.titreContact {
+  color: #39FFC9;
+  margin: 0;
+}
+
+.soustitreContact {
+  color:#FEFBF3;
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+#formContact label {
+  color: #D6CAB3;
+  font-size: 0.9em;
+}
+
+.nomContact, .prenomContact, .emailContact {
+  border: 0;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  padding: 1em;
+  color: #534741;
+  background-color: #D6CAB3;
+}
+
+.message {
+  border: 0;
+  border-radius: 1em;
+  padding: 1em 1em 2em 1em;
+  color: #534741;
+  background-color: #D6CAB3;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.8em;
+}
+
+.champRequis {
+  color: #D6CAB3;
+  margin: 0.2em 0 0 1.5em;
+  font-size: 0.8em;
+}
+
+.formBas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.checkbox1 {
+  margin-top: 0.5em;
+  width: 65%;
+}
+
+.checkbox2 {
+  margin-bottom: 1em;
+  width: 65%;
+}
+
+.boutonEnvoyer {
+  margin-left: auto;
+  margin-top: -3em;
+}
+
+.envoyer {
+  color: #534741;
+  background-color: #39FFC9;
+}

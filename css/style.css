@@ -1,0 +1,71 @@
+/* couleurs:
+- bleu:#39FFC9
+- gris clair :#D6CAB3
+- brun foncé: #534741*/
+
+/* _____________________________________________CONFIG GENERALE____________________________________*/
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1em;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 7;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 2em;
+}
+button {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  border: 0px;
+}
+
+footer{
+  position: relative;
+  bottom:0;
+  z-index: 8;
+  background-color: #D6CAB3;
+  padding: 0.8em;
+}
+.menuBas ul{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 4em;
+}
+.menuBas li{
+list-style: none;
+}
+.menuBas a{
+  color:#534741;
+  text-decoration: none;
+  font-weight: 700;
+}
+.none{
+  display: none;
+}
+.block{
+ display: block;
+}
