@@ -1,14 +1,27 @@
-
 /* __________________________CONFIGURATION RESPONSIVE_______________________ */
-@media screen and (max-width:900px) {
+
+@media screen and (max-width:800px) {
+  .iconNav {
+    margin-left: 5%;
+    color: #534741;
+  }
   /* configuration entête de page */
-  .entete {
+
+  .menuMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .liensNav{
+    display: none;
+  }
+  .liensNavHidden{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-    /* taille logo */
-
+  /* taille logo */
   .logo {
     width: 30vh;
   }
@@ -16,76 +29,95 @@
   .navigation li {
     padding: 0.5em 0;
   }
-  /* position du bouton contact */
-  .bouton {
-    margin: auto;
-    margin: 1em;
+  .bouton{
+    display: none;
+  }
+  .boutonContact {
+    padding: 0.7em 0.9em;
+    font-size: 0.95em;
+    margin-right: 1em;
   }
   /* position de la section d'accueil */
-
   #accueil {
     position: relative;
-    top:2em;
+    top: 5em;
+    height: 38em;
   }
-  
   /* position des contenus article et image dans la section d'accueil */
-
-  .containerAccueil{
+  .containerAccueil {
     display: flex;
-    flex-wrap:wrap ; 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
-    /* position des contenus article de la section d'accueil */
-
+  /* position des contenus article de la section d'accueil */
   .articleAccueil {
+    height: 100%;
+    width: 20em;
     position: relative;
-    margin-top: 20em;
-    width: 25em;
+    margin-top: 5em;
     padding-left: 1em;
     height: 100%;
     border-left: 2px solid#534741;
   }
- /* position des contenus image de la section d'accueil */
-
-  #accueil .images{
+  /* position des contenus image de la section d'accueil */
+  #accueil .images {
     display: none;
   }
-  /* #accueil .images {
-    position: relative;
-    margin-bottom: auto; 
-  }*/
-/* position de la section engagements */
-
+  /* #artisans : Configuration des bordures de section*/
+  .bordGauche{
+    background:linear-gradient(to right,#534741, transparent);
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 31em;
+    position: absolute;
+    left: 0;
+    z-index: 6;
+  }
+  .bordDroit{
+    background:linear-gradient(to left,#534741, transparent);
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 31em;
+    position: absolute;
+    right: 0;
+    z-index: 6;
+  }
+  /* position de la section engagements */
   .containerEngagements {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     height: 40em;
   }
-
-/* position des contenus images dans la section engagements */
-
+  #engagements {
+    background-color:#FEFBF3;
+  }
+  /* position des contenus images dans la section engagements */
   #engagements .images {
     display: none;
   }
-/* position des contenus articles dans la section engagements */
-
+  /* position des contenus articles dans la section engagements */
   .articleEngagement {
     width: 90%;
     margin: 0;
   }
-/* position des contenus  dans le footer */
-  .menuBas ul{
+  /* position des contenus  dans le footer */
+  .menuBas ul {
     display: flex;
-    flex-direction: column;   
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     gap: 1em;
   }
 }
-@media (min-width:900px) and (max-width:1024px) {
+
+@media (min-width:800px) and (max-width:1020px) {
+  .iconNav {
+    display: none;
+  }
   .entete {
     display: flex;
     flex-direction: row;
@@ -93,73 +125,95 @@
   }
   .logo {
     width: 25vh;
-    margin-left: 1em;
+    margin-left: 6%;
   }
   .navigation ul {
     display: flex;
   }
   .navigation a {
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 1em;
   }
   .bouton {
     margin-left: auto;
-    margin-right: 1em;
+    margin-right: 3%;
   }
-  .boutonContact{
-    padding: 0.5em 0.8em;
+  #boutonMobile{
+    display: none;
   }
-/* CONFIGURATION section accueiL*/
-
-  #accueil{
-    height: 48em;
+  .boutonContact {
+    font-size: 0.95em;
+    padding: 0.5em 0.7em;
+  }
+  /* CONFIGURATION section accueiL*/
+  #accueil {
+    height: 50em;
     padding-bottom: 0.5em;
+    width: 100%;
   }
-/* CONFIGURATION article+image accueiL*/
-
-.containerAccueil{
+  /* CONFIGURATION article+image accueiL*/
+  .containerAccueil {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-/* CONFIGURATION ARTICLE accueiL*/
-
-.articleAccueil {
-  position: relative;
-  margin-bottom: auto;
-  margin-top:5em ; 
-  margin-right: 5em; 
-  width: 25em;
-  padding-left: 1em;
-  height: 100%;
-  border-left: 2px solid#534741;
-
-}
+  /* CONFIGURATION ARTICLE accueiL*/
+  .articleAccueil {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: 6em;
+    margin-right: 5em;
+    width: 25em;
+    padding-left: 1em;
+    height: 100%;
+    border-left: 2px solid#534741;
+  }
   /* CONFIGURATION IMAGE accueiL*/
-
   #accueil .images {
     position: relative;
     margin-top: -9em;
   }
+  /* #artisans : Configuration des bordures de section*/
+  .bordGauche{
+      background:linear-gradient(to right,#534741, transparent);
+      background-repeat: no-repeat;
+      width: 20%;
+      height: 34em;
+      position: absolute;
+      left: 0;
+      z-index: 6;
+  }
+  .bordDroit{
+      background:linear-gradient(to left,#534741, transparent);
+      background-repeat: no-repeat;
+      width: 20%;
+      height: 34em;
+      position: absolute;
+      right: 0;
+      z-index: 6;
+  }
   /* CONFIGURATION section engagements*/
-
   #engagements {
     background-color: #39FFC9;
   }
   .containerEngagements {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
-    gap:5em ;
+    justify-content: center;
+    gap: 5em;
   }
   .articleEngagement {
-    width:80%;
+    width: 80%;
   }
-}
-@media (min-width:1024px) {
-      /* CONFIGURATION entête*/
 
+}
+
+@media (min-width:1020px) {
+  /* CONFIGURATION entête*/
+  .iconNav {
+    display: none;
+  }
   .entete {
     display: flex;
     flex-direction: row;
@@ -167,9 +221,9 @@
   }
   .logo {
     width: 30vh;
-    margin-left: 3em;
+    margin-left: 6%;
   }
-  .navigation{
+  .navigation {
     margin-left: 1.5em;
   }
   .navigation ul {
@@ -180,10 +234,17 @@
   }
   .bouton {
     margin-left: auto;
-    margin-right: 3em;
+    margin-right: 3%;
   }
-    /* CONFIGURATION section accueil*/
-  .containerAccueil{
+  #boutonMobile{
+    display: none;
+  }
+  /* CONFIGURATION section accueil*/
+  #accueil {
+    width: 100%;
+    height: 48em; 
+  }
+  .containerAccueil {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -192,31 +253,46 @@
     width: 75%;
     margin: auto;
   }
-
-/* CONFIGURATION iMAGE ACCUEIL*/
-
+  /* CONFIGURATION iMAGE ACCUEIL*/
   #accueil .images {
     position: relative;
     margin-top: auto;
-    margin-bottom:10em ; 
+    margin-bottom: 10em;
   }
-/* CONFIGURATION ARTICLE accueiL*/
-
-.articleAccueil {
-  position: relative;
-  margin-bottom: auto;
-  margin-top:10em ; 
-  margin-right: 5em; 
-  width: 25em;
-  border-left: 2px solid#534741;
-  padding-left: 1em;
-  height: 100%;
-}
+  /* CONFIGURATION ARTICLE accueiL*/
+  .articleAccueil {
+    position: relative;
+    margin-bottom: auto;
+    margin-top: 10em;
+    margin-right: 5em;
+    width: 25em;
+    border-left: 2px solid#534741;
+    padding-left: 1em;
+    height: 80%;
+  }
+  /* #artisans : Configuration des bordures de section*/
+  .bordGauche{
+    background:linear-gradient(to right,#534741, transparent);
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 34em;
+    position: absolute;
+    left: 0;
+    z-index: 6;
+  }
+  .bordDroit{
+    background:linear-gradient(to left,#534741, transparent);
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 34em;
+    position: absolute;
+    right: 0;
+    z-index: 6;
+  }
   /* CONFIGURATION section engagements*/
   #engagements {
     background-color: #39FFC9;
   }
-  
   .containerEngagements {
     display: flex;
     flex-direction: row;
@@ -226,20 +302,20 @@
     width: 70%;
   }
   .articleEngagement {
-    width:25em;
+    width: 25em;
   }
+
 }
 
 /* _______________________________________CONFIG HEADER / BARRE DE NAVIGATION____________________________________*/
 
 .entete {
-  background-color:#FEFBF3;
+  background-color: #FEFBF3;
 }
 
-
 .navigation ul {
-  margin:0 ;
-  padding:0 ;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation li {
@@ -257,12 +333,12 @@
   cursor: pointer;
 }
 
-
 .boutonContact {
   color: #FEFBF3;
   text-decoration: none;
   background-color: #534741;
 }
+
 .boutonContact:hover {
   cursor: pointer;
 }
@@ -273,21 +349,17 @@
 
 #accueil {
   background-color: #D6CAB3;
-  width: 100%;
-  height: 48em;
   color: #534741;
 }
 
-
 #accueil h1 {
-  color:#FEFBF3;
+  color: #FEFBF3;
   margin: 0;
 }
 
 #accueil h2 {
   margin: 0em 0em 0.5em 0em;
 }
-
 
 /* CONFIGURATION BOUTON "COMMANDEZ"*/
 
@@ -301,7 +373,6 @@
 }
 
 /* CONFIGURATION IMAGE ET CERCLES*/
-
 
 #accueil .img {
   margin-top: 10em;
@@ -413,8 +484,8 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; 
-  align-items: center; 
+  justify-content: space-evenly;
+  align-items: center;
   overflow-x: auto;
   position: relative;
   z-index: 5;
@@ -473,7 +544,6 @@
 
 /* _____________________________________________SECTION ENGAGEMENTS____________________________________*/
 
-
 .containerEngagements {
   background-color: #FEFBF3;
   margin: auto;
@@ -513,7 +583,7 @@
 }
 
 .boutonEngagement:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 #engagements .img {

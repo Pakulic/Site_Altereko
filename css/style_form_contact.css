@@ -3,28 +3,48 @@
 
 @media(max-width:900px){
   #formContact {
-    width: 50%;
+    width: 60%;
     background-color: #534741;
     border-radius: 2em;
     padding: 2em;
     margin: auto;
     position: fixed;
-    top: 9em;
-    left: 8em;
-    z-index: 8;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    z-index: 9;
+  }
+  .checkbox1 {
+    margin-top: 0.5em;
+    width: 65%;
+  }
+  
+  .checkbox2 {
+    margin-bottom: 1em;
+    width: 55%;
   }
 }
 @media(min-width:900px){
   #formContact {
-    width: 50%;
+    max-width: 55%;
     background-color: #534741;
     border-radius: 2em;
     padding: 2em;
     margin: auto;
     position: fixed;
-    top: 9em;
-    left: 22em;
+    top: 15%;
+    left: 20%;
+    right: 20%;
     z-index: 8;
+  }
+  .checkbox1 {
+    margin-top: 0.5em;
+    width: 65%;
+  }
+  
+  .checkbox2 {
+    margin-bottom: 1em;
+    width: 65%;
   }
 }
 
@@ -94,15 +114,6 @@
   justify-content: space-around;
 }
 
-.checkbox1 {
-  margin-top: 0.5em;
-  width: 65%;
-}
-
-.checkbox2 {
-  margin-bottom: 1em;
-  width: 65%;
-}
 
 .boutonEnvoyer {
   margin-left: auto;

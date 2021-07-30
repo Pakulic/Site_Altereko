@@ -29,20 +29,27 @@
 <!-- ______________________________________ENTETE DU SITE INTERNET____________________________________ -->
 
   <header class="entete">
-    <a href="index.html"><img class="logo" src="images/logo-alterekoshop.svg" alt="logo alterekoshop"></a>
+    <nav class="menuMobile">
+        <a class="iconNav">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html"><img class="logo" src="images/logo-alterekoshop.svg" alt="logo alterekoshop"></a>
+        <div id="boutonMobile">
+          <button class="boutonContact">Nous contacter</button>
+        </div>
+    </nav>
     <nav class="navigation">
-      <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#artisans">Nos artisans</a></li>
-        <li><a href="#engagements">Nos engagements</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
+      <ul class="liensNav">
+        <li class="lienNav"><a href="#accueil">Accueil</a></li>
+        <li class="lienNav"><a href="#artisans">Nos artisans</a></li>
+        <li class="lienNav"><a href="#engagements">Nos engagements</a></li>
+        <li class="lienNav"><a href="boutique.html">Boutique</a></li>
       </ul>
     </nav>
     <div class="bouton">
       <button class="boutonContact">Nous contacter</button>
     </div>
   </header>
-
   <main>
 <!-- _____________________________________________SECTION ACCUEIL____________________________________ -->
     <section id="accueil">
@@ -70,6 +77,8 @@
     <section id=artisans>
       <h1>Nos artisans</h1>
       <h2>Un visage derrière chaque création</h2>
+      <div class="bordGauche"></div>
+      <div class="bordDroit"></div>
       <div class="cartes">
         <article class="articleArtisans">
           <img class=photo src="images/Artisans/Kalaya_Pakpao.jpg" alt="photo Kalaya Pakpao">

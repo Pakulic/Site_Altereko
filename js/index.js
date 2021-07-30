@@ -2,7 +2,7 @@
 
 // déclaration des variables / sélections des contenus dans le fichier html
     // selection du bouton "contact"
-const BOUTON=document.querySelector(".boutonContact")
+const BOUTON=document.querySelectorAll(".boutonContact")
     //selection de la section formulaire "contact"
 const SECTIONFORM=document.querySelector("#formContact");
     //selection de la balise form 
@@ -20,15 +20,16 @@ const CONDITIONS=document.querySelector(".conditions");
 const FERMETURE=document.querySelector("#fermeture");
 
 // création d'un évenement d'écoute (addEvenListener) pour afficher le formulaire au clic
-
-BOUTON.addEventListener("click",()=>{
+BOUTON.forEach(cell => {
+    cell.addEventListener("click",()=>{
     // afficher la section du formulaire au clic si elle est cachée en css (par display:none)
-  if (SECTIONFORM.style.display == "none"){
-    SECTIONFORM.style.display = "block"; 
-  }else{
-       //cacher la section du formulaire au clic au second clic sur le bouton
-    SECTIONFORM.style.display = "none"; 
-  }
+    if (SECTIONFORM.style.display == "none"){
+      SECTIONFORM.style.display = "block"; 
+    }else{
+         //cacher la section du formulaire au clic au second clic sur le bouton
+      SECTIONFORM.style.display = "none"; 
+    }
+    })
 })
 
 /*création d'un évenement d'écoute (addEvenListener)
@@ -83,4 +84,27 @@ BOUTONENGAGEMENTS.addEventListener("click",()=>{
 // fermeture de la fenetre au clic sur la croix => balise "i" (#fermeture)
 FERMETURELABEL.addEventListener("click",()=>{
   SECTIONLABEL.style.display = "none"; 
+})
+
+//___________AFFICHER LE MENU HAMBURGER______________
+// déclaration des variables / sélections des contenus dans le fichier html
+//selection du bouton "Bouton mobile"
+const BOUTONNAV=document.querySelector(".iconNav")
+//selection des liens du menus
+const LIENSMENUS=document.querySelector(".liensNav");
+const NAV=document.querySelectorAll(".lienNav");
+
+/*création d'un évenement d'écoute (addEvenListener)
+pour afficher le menu en mode responsive */
+BOUTONNAV.addEventListener("click",()=>{
+  LIENSMENUS.classList.toggle("liensNav")
+  LIENSMENUS.classList.toggle("liensNavHidden")
+})
+/*création d'un évenement d'écoute (addEvenListener)
+pour cacher le menu au clic sur un lien du menu */
+NAV.forEach(cell => {
+  cell.addEventListener("click",()=>{
+    LIENSMENUS.classList.toggle("liensNavHidden")
+    LIENSMENUS.classList.toggle("liensNav")
+  })
 })
